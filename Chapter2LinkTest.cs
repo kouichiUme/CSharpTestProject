@@ -34,5 +34,24 @@ namespace TestProject1
         }
 
 
+
+        [TestMethod]
+        public void test3rdNode()
+        {
+            
+            Chapter2Link<int> link = new Chapter2Link<int>();
+
+            link.add(1);
+            link.add(2);
+            link.add(3);
+            link.add(4);
+
+            Assert.AreEqual(3,link.find3rdNode(2));
+
+
+
+        }
+
+
     }
 }
