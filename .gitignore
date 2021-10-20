@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# 
+Microsoft.CodeAnalysis.Metrics.3.3.0/
