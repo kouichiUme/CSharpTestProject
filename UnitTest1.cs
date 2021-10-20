@@ -1,4 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Diagnostics;
+using log4net.Config;
 
 namespace TestProject1
 {
@@ -17,8 +20,10 @@ namespace TestProject1
         [TestMethod]
         public void TestMethodNGLength()
         {
-
-
+            ConsoleApp1.ApproximationAlgorithms aa = new ConsoleApp1.ApproximationAlgorithms();
+            BasicConfigurator.Configure();
+            aa.approxSubsetSum();
+            Debug.WriteLine("debug ");
             Assert.IsFalse(ConsoleApp1.Chapter1String.checkSortedString("abcde", "edca"));
 
 
